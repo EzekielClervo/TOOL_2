@@ -674,7 +674,7 @@ def shoha_menu():
     print(logo)
     DARK=requests.get("https://github.com/EzekielClervo/TOOL_2/blob/main/approval.txt").text
     if id in DARK:
-        Main()
+        ISAAC()
     else:
         os.system("clear")
         os.system("xdg-open https://t.me/ANONYMOUS_CYBER07")
