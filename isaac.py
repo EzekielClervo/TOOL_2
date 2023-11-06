@@ -678,7 +678,7 @@ def shoha_menu():
         menu()
     else:
         os.system("clear")
-        os.system("xdg-open https://t.me/ANONYMOUS_CYBER07")
+        os.system("xdg-open https://www.facebook.com/reikanabis")
         time.sleep(3.0)
         
         os.system("clear")
@@ -695,6 +695,6 @@ def shoha_menu():
         name = input(" Your Name : ")
         print ("")
         input(" Press Enter To Send Key")
-        os.system("xdg-open https://t.me/ANONYMOUS_07XD")
+        os.system("xdg-open https://www.facebook.com/reikanabis")
         shoha_menu()   
 shoha_menu()
