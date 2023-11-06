@@ -75,7 +75,7 @@ def S1():
 	kt = random.choice(['com.facebook.katana','com.facebook.orca','com.facebook.mlite'])
 	fbcr = random.choice(['o2 - de', 'Verizon - us','MY CELCOM','Vodafone - uk','null','DTAC','IND airtel','Nepal Telecom'])
 	s= "[FBAN/FB4A;FBAV/"+str(random.randint(111,999))+'.0.0.'+str(random.randrange(9,99))+str(random.randint(111,999)) +";FBBV/"+str(random.randint(111111111,999999999))
-	e = ";[FB4A/;FBAV/A1XDL5U4;FBBV/165895173;FBAN/FB4A;FBAV/A1XDL5U4;FBBV/165895173;FBDM//*{density=2.5,width=1440,height=1280};FBLC/"+en+";FBRV/578480640;FBCR/"+fbcr+";FBMF/VIVO;FBBD/Infinix;FBPN/"+kt+";FBDV/HTC_Drive_7;FBSV/17;FBOP/5;FBCA/arm64-v8a;FBSS/', 'FB4A/;FBAV/;FBBV/632319099;FBAN/FB4A;FBAV/;FBBV/632319099;FBDM//*{density=2.5,width=1920,height=1280};FBLC/"+en+";FBRV/393251242;FBCR/"+fbcr+";FBMF/Motorola;FBBD/Huawei;FBPN/"+kt+";FBDV/LG_Q13;FBSV/14;FBOP/8;FBCA/armeabi;FBSS/12:;]"
+	e = ";[FBAN/;FBAV/4Q095MQG;FBBV/712691042;FBAN/FBAN;FBAV/4Q095MQG;FBBV/712691042;FBDM//*{density=2.0,width=1920,height=1920};FBLC/"+en+";FBRV/796875784;FBCR/"+fbcr+";FBMF/VIVO;FBBD/Amazon;FBPN/"+kt+";FBDV/HTC_U20;FBSV/17;FBOP/7;FBCA/arm64-v8a;FBSS/:;]"	
 	ua = s + e	
 	return ua
 
