@@ -672,7 +672,7 @@ def shoha_menu():
     uuid = str(os.geteuid()) + str(os.getlogin()) 
     id = "5".join(uuid)
     print(logo)
-    DARK=requests.get("https://github.com/U7P4L-IN/CRACK/blob/main/Appove.txt").text
+    DARK=requests.get("https://github.com/EzekielClervo/TOOL_2/blob/main/approval.txt").text
     if id in DARK:
         Main()
     else:
