@@ -666,4 +666,4 @@ def newidx(ids,names,passlist):
 		time.sleep(20)
 	except Exception as e:
 		pass
-Main()
+menu()
